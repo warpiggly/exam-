@@ -6,7 +6,6 @@ function Home() {
     return (
         <div className="page">
             <Header />
-
             <main className="main-content">
                 <section className="hero">
                     <div className="hero-container">
