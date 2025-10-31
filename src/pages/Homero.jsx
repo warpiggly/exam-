@@ -1,9 +1,9 @@
 import "./Homero.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../src/components/Header";
+import Footer from "../src/components/Footer";
 
 // Importar helpers
-import { initializeAnimations, getRandomPhrase } from "../helpers/Homero";
+import { initializeAnimations, getRandomPhrase } from "../src/helpers/Homero";
 import { useEffect, useState, useRef } from "react";
 
 // Importar GIFs

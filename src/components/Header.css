@@ -17,6 +17,16 @@
   margin: 0;
   font-size: 1.5rem;
 }
+.boton-registro {
+  display: inline-block;
+  background: #0077b6;
+  color: #ebeff1;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(86, 151, 236, 0.12);
+}
 
 .header-nav {
   display: flex;
