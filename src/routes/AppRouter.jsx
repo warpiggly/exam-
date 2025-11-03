@@ -3,6 +3,7 @@ import Home from '../pages/Home';
 import Homero from '../pages/Homero';
 import LoginForm from '../pages/Login';
 import RegisterForm from '../pages/Register.jsx';
+import Dashboard1 from '../pages/dashboard1.jsx';
 
 export let AppRouter = [
     {
@@ -20,5 +21,10 @@ export let AppRouter = [
     {
         path: '/register',
         element: <RegisterForm />,
+    },
+    {
+        path: '/dashboard1',
+        element: <Dashboard1 />,
+        
     },
 ];

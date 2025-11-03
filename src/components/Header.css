@@ -1,5 +1,5 @@
 .header {
-  background-color: #333;
+  background-color: #0D1117;
   padding: 1rem 0;
   color: white;
 }
@@ -14,14 +14,28 @@
   padding: 0.5rem 1rem;;
 }
 
-.header-title {
+.header-title1 {
   margin: 0;
   font-size: 1.5rem;
   text-decoration: none;
+  /* Use Roboto with a sensible fallback */
+  font-family: 'Roboto', sans-serif;
 }
 .enlace-header {
   display: inline-block;
   color: #ebeff1;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.easter_egg a{
+  color: #0D0E0F;
+}
+.enlace-header-homero {
+  display: inline-block;
+  color: #0D0E0F;
   padding: 0.5rem 1rem;
   border-radius: 8px;
   text-decoration: none;
@@ -52,13 +66,23 @@
   gap: 2rem;
 }
 
-.nav-list a {
+/* .nav-list a {
   color: white;
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s ease;
-}
+} */
 
 .nav-list a:hover {
   color: #00a8ff;
+}
+
+.linea-custom2 {
+  width: 80%;
+  height: 1px;
+  background-color: #cccccc5b;
+  /* Center horizontally inside parent */
+  margin: 10px auto 20px;
+  /* For grid/parent alignment safety */
+  justify-self: center;
 }

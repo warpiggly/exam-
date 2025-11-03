@@ -2,8 +2,16 @@
 
 import React from 'react';
 import './Login.css';
+import { useNavigate } from 'react-router-dom';
 
 function LoginForm() {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // TODO: add real authentication here
+    navigate('/dashboard1');
+  };
   return (
     <div className="login-container">
         <div className="login-header">
@@ -12,9 +20,9 @@ function LoginForm() {
         </div>
 
       <div className="login-box">
-        
-        
-        <form className="login-form">
+
+
+        <form className="login-form" onSubmit={handleSubmit}>
           <div>
             <label htmlFor="email">Correo electrónico</label>
             <input 

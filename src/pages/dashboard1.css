@@ -1,0 +1,130 @@
+.dashboard-container1 {
+  display: flex;
+  background-color: #0F172A;
+  color: #e5e7eb;
+  height: 100vh;
+}
+
+.main-content1 {
+  flex: 1;
+  padding: 30px;
+}
+
+.dashboard-header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.profile-img {
+  border-radius: 50%;
+  /* Reduced size for profile image */
+  width: 60px;
+  height: 60px;
+  /* Ensure image covers the box and keeps aspect ratio */
+  object-fit: cover;
+  display: inline-block;
+}
+
+.dashboard-body h1 {
+  color: #fff;
+  margin-top: 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.stat-card {
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.stat-card h3 {
+  font-size: 28px;
+  color: #fff;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.notifications,
+.shortcuts {
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.notif-item {
+  margin-bottom: 15px;
+}
+
+.notif-item h4 {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.notifications a {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.notifications a:hover {
+  text-decoration: underline;
+}
+
+.shortcuts button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #374151;
+  color: #d1d5db;
+}
+
+.btn-secondary:hover {
+  background-color: #4b5563;
+}
+
+.tittle1 {
+  font-size: 2rem;
+  font-weight: bold;
+  /* Use block so it behaves like a normal heading */
+  display: block;
+  /* Align text to the left */
+  text-align: left;
+  /* Small bottom margin to separate from following content */
+  margin: 0 0 10px 0;
+  /* If the parent is a flex/grid container, ensure the item starts at the beginning */
+  align-self: start;
+  justify-self: start;
+}
+
+.linea-custom {
+  width: 100%;
+  height: 1px;
+  background-color: #cccccc5b;
+  margin-top: 10px;
+}

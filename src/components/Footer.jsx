@@ -1,42 +1,24 @@
-import React from 'react'
-import './Footer.css'
+import React from "react";
+import "./Footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-section">
-          <h3>Enlaces Rápidos</h3>
-          <ul>
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/productos">Productos</a></li>
-            <li><a href="/servicios">Servicios</a></li>
-            <li><a href="/contacto">Contacto</a></li>
-          </ul>
-        </div>
-        
-        <div className="footer-section">
-          <h3>Contacto</h3>
-          <p>Email: info@misitio.com</p>
-          <p>Teléfono: (123) 456-7890</p>
-          <p>Dirección: Calle Principal #123</p>
-        </div>
-
-        <div className="footer-section">
-          <h3>Redes Sociales</h3>
-          <div className="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-            <a href="#">LinkedIn</a>
+      <div className="linea-custom1"></div>
+        <div className="footer-container">
+          <div className="footer-section">
+            <div className="social-links">
+              <a href="#">Terminos de servicio</a>
+              <a href="#">Politica de Privacidad</a>
+              <a href="#">Contacto</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="footer-bottom">
-        <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
-      </div>
-    </footer>
-  )
-}
+      
 
-export default Footer
+      <p className="sitio_web">&copy; 2025 Mi Aplicacion. Todos los derechos reservados.</p>
+    </footer>
+  );
+};
+
+export default Footer;

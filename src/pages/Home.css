@@ -10,12 +10,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center; /* center content vertically */
-    background: #0d0e0f;
+    background: #0D1117;
     padding: 2rem 0;
 }
 
 .hero {
-    background-color: #0d0e0f;
+    background-color: #0D1117;
     color: white;
     padding: 4rem 0;
 }
@@ -96,4 +96,21 @@
     .features {
         grid-template-columns: 1fr;
     }
+}
+
+.cara {
+    max-width: 800px;
+    margin-top: 150px;
+    text-align: center;
+    color: #ffffff;
+}   
+
+.cara h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.cara p {
+    font-size: 20px;
+    opacity: 0.9;
+    color: #79818B;
 }

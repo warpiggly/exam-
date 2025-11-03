@@ -1,27 +1,41 @@
 .footer {
-  background-color: #333;
+  background-color: #0D1117;
   color: white;
   padding: 3rem 0 0 0;
 }
 
 .footer-container {
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  /* single centered column so the footer content is horizontally centered */
+  grid-template-columns: 1fr;
+  gap: 0.5rem 0;
 }
 
-.footer-section h3 {
-  color: #00a8ff;
-  margin-bottom: 1rem;
+/* center content inside each grid cell */
+.footer-container {
+  justify-items: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+
+
+.footer-section {
+  text-align: center;
 }
 
 .footer-section ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: inline-flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-section ul li {
@@ -45,15 +59,15 @@
 }
 
 .footer-bottom {
-  margin-top: 2rem;
-  padding: 1rem 0;
+  margin-top: 1rem;
+  padding: 2% 0;
   text-align: center;
-  border-top: 1px solid #444;
+  border-top: 1px solid #353A41;
 }
 
 .footer-bottom p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 /* Responsive design */
@@ -65,5 +79,24 @@
 
   .social-links {
     justify-content: center;
+    gap: 50px;
   }
+}
+
+.sitio_web{
+  margin: 5% auto 5 auto;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+}
+
+
+.linea-custom1 {
+  width: 60%;
+  height: 1px;
+  background-color: #cccccc5b;
+  /* Center horizontally inside parent */
+  margin: 10px auto 20px;
+  /* For grid/parent alignment safety */
+  justify-self: center;
 }
