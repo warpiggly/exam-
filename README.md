@@ -1,105 +1,128 @@
 # Proyecto Web - Los Simpsons Fan Page
 
 ## 📝 Descripción
-Este es un proyecto web interactivo construido con React y Vite que incluye una página principal y una página especial dedicada a Homero Simpson. El sitio cuenta con animaciones, efectos visuales, y elementos interactivos que hacen la experiencia más inmersiva.
+Proyecto web interactivo construido con React y Vite. La app incluye una página principal, una página especial dedicada a Homero Simpson y una interfaz tipo dashboard con sidebar. Implementa animaciones, audio, navegación con React Router y componentes reutilizables.
 
-## ✨ Características
+## 🆕 Qué hay de nuevo (resumen de cambios recientes)
+- Añadido componente `Sidebar` (con estilos personalizados).
+- Página de `Dashboard` (`dashboard1.jsx` / `dashboard1.css`) con layout y tarjetas estadísticas.
+- Login con redirección a `/dashboard1` al enviar el formulario (uso de `useNavigate`).
+- Ajustes de estilos globales y componentes:
+  - `Header` ahora usa la fuente Roboto correctamente.
+  - `Footer`: línea separadora centrada (`.linea-custom1`).
+  - `sidebar`: reducida la separación entre logo y menú.
+  - `.profile-img` reducido a 40×40 px con `object-fit: cover`.
+  - Correcciones de alineación para `.tittle1` en el dashboard.
 
-### Página Principal
-- Diseño moderno y responsive
-- Header con navegación intuitiva
-- Sección Hero con llamada a la acción
-- Tarjetas de características
-- Footer con información de contacto
+## ✨ Características principales
+
+### Página Principal (Home)
+- Diseño moderno y responsive.
+- Header con navegación y enlaces a Home, Homero, Login y Register.
+- Sección Hero y tarjetas informativas.
 
 ### Página de Homero
-- Animaciones interactivas con GIFs de Los Simpsons
-- Frases aleatorias de Homero que cambian cada 5 segundos
-- Música de fondo con control de reproducción
-- Layout grid con disposición única de elementos
-- Efectos hover en las imágenes
+- Galería de GIFs animados y efectos hover.
+- Reproducción de música de fondo con controles (play/pause).
+- Frases aleatorias de Homero que cambian automáticamente (cada 5s).
 
-## 🚀 Tecnologías Utilizadas
+### Dashboard
+- Layout con `Sidebar` persistente y contenido principal.
+- Tarjetas de estadísticas (grid) y panel de notificaciones.
+
+### Autenticación (básica)
+- Formulario de `Login` con navegación a dashboard (redirección al enviar formulario).
+- *Nota*: no hay backend de autenticación en este repo — la redirección es de cliente.
+
+## 🚀 Tecnologías utilizadas
 - React 19
 - Vite
 - React Router DOM
-- CSS Grid y Flexbox
-- Google Fonts (Patua One)
+- CSS (Grid y Flexbox)
+- Google Fonts (Roboto importada en `index.html`)
 
-## 💻 Instalación y Ejecución
+## 💻 Instalación y ejecución
 
 1. Clona el repositorio:
+
 ```bash
 git clone [url-del-repositorio]
+cd exam
 ```
 
-2. Instala las dependencias:
+2. Instala dependencias:
+
 ```bash
 npm install
 ```
 
 3. Inicia el servidor de desarrollo:
+
 ```bash
 npm run dev
 ```
 
 4. Abre el navegador en:
+
 ```
 http://localhost:5173
 ```
 
-## 📁 Estructura del Proyecto
+## 📁 Estructura del proyecto (actualizada)
 
 ```
 src/
 ├── assets/
 │   ├── IMG/
 │   │   └── GIF/          # GIFs animados
-│   └── SONG/             # Archivos de audio
+│   ├── SONG/             # Archivos de audio
+│   └── VIDEO/
 ├── components/
-│   ├── Header/          # Componente de navegación
-│   └── Footer/          # Pie de página
+│   ├── Header.jsx
+│   ├── Footer.jsx
+│   ├── Sidebar.jsx
+│   └── (otros componentes)
 ├── pages/
-│   ├── Home/           # Página principal
-│   └── Homero/         # Página especial de Homero
+│   ├── Home.jsx
+│   ├── Homero.jsx
+│   ├── Login.jsx
+│   ├── Register.jsx
+│   └── dashboard1.jsx
 ├── helpers/
-│   └── Homero.js      # Funciones auxiliares y animaciones
+│   └── Homero.js        # Funciones auxiliares (frases, utilidades)
 └── routes/
-    └── AppRouter.jsx   # Configuración de rutas
+    └── AppRouter.jsx    # Rutas y navegación
 ```
 
-## 🎮 Características Interactivas
+## � Estilos y configuraciones
+- La fuente Roboto se importa en `index.html` y se aplica globalmente en `index.css`.
+- Variables CSS y utilidades en `index.css` para pesos y estilos de fuente.
+- Componentes clave con reglas específicas:
+  - `sidebar.css`: ajuste de espaciado entre logo y menú.
+  - `dashboard1.css`: `.tittle1` alineada a la izquierda; `.profile-img` 40×40px.
+  - `Footer.css`: `.linea-custom1` centrada.
 
-### Animaciones
-- Efectos de entrada suaves para los GIFs
-- Rotación y escala en hover
-- Transiciones fluidas
+## 📱 Responsive
+- Diseño adaptable: los grids y el sidebar están pensados para pantallas grandes; el footer y nav se adaptan en móviles.
 
-### Audio
-- Música de fondo en la página de Homero
-- Control de reproducción mediante botón flotante
-- Autoplay con fallback manual
+## 🧩 Notas para desarrolladores
+- Si vas a implementar autenticación real, añade un backend y reemplaza la lógica de redirección del cliente por llamadas autenticadas.
+- Para depurar estilos conflictivos, revisa contenedores padres (flex/grid) que puedan centrar hijos con `align-items` o `justify-content`.
 
-### Frases
-- Sistema de frases aleatorias de Homero
-- Actualización automática cada 5 segundos
-- Estilo visual distintivo
+## 🤝 Contribuciones
+Las contribuciones son bienvenidas:
 
-## 🎨 Personalización
-El sitio utiliza variables CSS para colores y fuentes, lo que facilita la personalización:
-- Fuente principal: Patua One
-- Colores principales: 
-  - Fondo página Homero: #78bbcb
-  - Header/Footer: #333
-  - Acentos: #00a8ff
-
-## 📱 Responsive Design
-- Diseño adaptable a diferentes tamaños de pantalla
-- Grid responsivo para la página de Homero
-- Menú de navegación adaptable
-
-## 🤝 Contribución
-Las contribuciones son bienvenidas. Por favor, abre un issue primero para discutir los cambios que te gustaría hacer.
+1. Abre un issue describiendo el cambio.
+2. Crea una rama con un PR claro y pruebas si aplica.
 
 ## 📄 Licencia
-Este proyecto está bajo la Licencia MIT - ver el archivo LICENSE.md para más detalles.
+Este proyecto está bajo la Licencia MIT - ver el archivo `LICENSE.md` para más detalles.
+
+---
+
+Si quieres, puedo:
+- Añadir secciones de 'Cómo contribuir' más detalladas.
+- Agregar instrucciones para pruebas unitarias o scripts adicionales.
+- Generar badges (build, license) para la cabecera del README.
+
+¿Deseas que añada algo más específico (ej.: comandos de lint/test, badges, o un ejemplo de API para autenticación)?
