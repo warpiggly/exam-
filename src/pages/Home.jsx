@@ -18,7 +18,7 @@ function Home() {
 
                 <div className="cara">
                     <h2>Caracteristicas Principales</h2>
-                    <p>Descubre como nuestra plataforma podria ayudar a alcanazar tus objetivos de manera mas eficiente </p>
+                    <p>Descubre como nuestra plataforma podria ayudar a alcanzar tus objetivos de manera mas eficiente </p>
                 </div>
 
                 <section className="features">

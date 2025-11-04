@@ -19,10 +19,8 @@
 
 .profile-img {
   border-radius: 50%;
-  /* Reduced size for profile image */
   width: 60px;
   height: 60px;
-  /* Ensure image covers the box and keeps aspect ratio */
   object-fit: cover;
   display: inline-block;
 }
@@ -111,15 +109,12 @@
 .tittle1 {
   font-size: 2rem;
   font-weight: bold;
-  /* Use block so it behaves like a normal heading */
   display: block;
-  /* Align text to the left */
   text-align: left;
-  /* Small bottom margin to separate from following content */
   margin: 0 0 10px 0;
-  /* If the parent is a flex/grid container, ensure the item starts at the beginning */
   align-self: start;
   justify-self: start;
+  font-family: roboto;
 }
 
 .linea-custom {

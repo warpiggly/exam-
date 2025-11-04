@@ -4,7 +4,7 @@
 .rege-container {
   margin: 0;
   font-family: "Inter", sans-serif;
-  background-color: #f5f8ff;
+  background-color: #0F172A;
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -15,7 +15,7 @@
 
 /* Caja principal del formulario */
 .rege-box {
-  background-color: #ffffff;
+  background-color: #1e293b;
   padding: 2.5rem;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -35,13 +35,13 @@
 .rege-title {
   font-size: 2rem;
   font-weight: 600;
-  color: #000000;
+  color: #eeeeee;
   margin-bottom: 0.4rem;
 }
 
 .rege-subtitle {
   font-size: 1rem;
-  color: #3b3b3b;
+  color: #fdfdfd;
   margin-bottom: 1.8rem;
 }
 
@@ -57,16 +57,16 @@
 .rege-label {
   font-size: 0.85rem;
   font-weight: 500;
-  color: #334155;
+  color: #ffffff;
 }
 
 .rege-input {
   width: 100%;
   padding: 0.75rem;
   border-radius: 8px;
-  border: 1px solid #cbd5e1;
-  background-color: #f9fafb;
-  color: #0f172a;
+  border: 1px solid #525252;
+  background-color: #0F172A;
+  color: #ffffff;
   font-size: 0.9rem;
   outline: none;
   transition: border 0.3s;
@@ -101,19 +101,19 @@
   margin-top: 2rem;
   padding: 1rem;
   font-size: 0.9rem;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   width: 100%;
 }
 
 .reje-start {
-  color: #60a5fa;
+  color: #4f46e5;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .reje-start:hover {
-  color: #93c5fd;
+  color: #4338ca;
   text-decoration: underline;
 }

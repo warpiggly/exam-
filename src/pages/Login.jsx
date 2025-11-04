@@ -9,7 +9,7 @@ function LoginForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // TODO: add real authentication here
+    
     navigate('/dashboard1');
   };
   return (
@@ -50,7 +50,7 @@ function LoginForm() {
         </form>
       </div>
           <p className="register-link">
-            ¿No tienes una cuenta? <a href="#">Regístrate aquí</a>
+            ¿No tienes una cuenta? <a href="/register">Regístrate aquí</a>
           </p>
     </div>
   );
