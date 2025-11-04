@@ -53,7 +53,7 @@ function Homero() {
             <Header />
             <main className="main-content2">
                 <h1 className="page_homer">Sitio Web de Homero</h1>
-                <p className="homer-phrase">{phrase}</p>
+                {/* <p className="homer-phrase">{phrase}</p> */}
                 <div className="container">
                     <div className="relojGusano">
                         <img className="relojGusano_reloj" src={relojGif} alt="reloj" />

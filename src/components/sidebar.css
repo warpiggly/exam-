@@ -2,7 +2,7 @@
   background-color: #1E293B;
   color: #fff;
   width: 250px;
-  height: 120vh;
+  height: 130vh;
 
   flex-direction: column;
   justify-content: space-between;
@@ -51,7 +51,7 @@
   cursor: pointer;
   font-size: 14px;
   align-self: flex-start;
-  margin-top: 550px;
+  margin-top: 570px;
 }
 .logout-btn:hover {
   color: #fff;

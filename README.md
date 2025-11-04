@@ -119,10 +119,3 @@ Las contribuciones son bienvenidas:
 Este proyecto está bajo la Licencia MIT - ver el archivo `LICENSE.md` para más detalles.
 
 ---
-
-Si quieres, puedo:
-- Añadir secciones de 'Cómo contribuir' más detalladas.
-- Agregar instrucciones para pruebas unitarias o scripts adicionales.
-- Generar badges (build, license) para la cabecera del README.
-
-¿Deseas que añada algo más específico (ej.: comandos de lint/test, badges, o un ejemplo de API para autenticación)?
