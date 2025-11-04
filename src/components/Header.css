@@ -1,5 +1,5 @@
 .header {
-  background-color: #0D1117;
+  background-color: #0F172A;
   padding: 1rem 0;
   color: white;
 }
@@ -44,7 +44,7 @@
 
 .boton-registro {
   display: inline-block;
-  background: #0077b6;
+  background: #4f46e5;
   color: #ebeff1;
   padding: 0.5rem 1rem;
   border-radius: 8px;
@@ -64,17 +64,14 @@
   padding: 0;
   display: flex;
   gap: 2rem;
+  
 }
 
-/* .nav-list a {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-} */
 
 .nav-list a:hover {
-  color: #00a8ff;
+   background-color: #5759db;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(93, 202, 188, 0.2);
 }
 
 .linea-custom2 {

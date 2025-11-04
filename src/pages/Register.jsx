@@ -49,7 +49,7 @@ function RegisterForm() {
       </div>
       <div className="rege-footer">
           ¿Ya tienes una cuenta?{" "}
-          <a href="#" className="reje-start">
+          <a href="/login" className="reje-start">
             Inicia sesión
           </a>
         </div>

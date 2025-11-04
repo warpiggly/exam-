@@ -10,12 +10,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center; /* center content vertically */
-    background: #0D1117;
+    background: #0F172A;
     padding: 2rem 0;
 }
 
 .hero {
-    background-color: #0D1117;
+    background-color: #0F172A;
     color: white;
     padding: 4rem 0;
 }
@@ -40,7 +40,7 @@
 
 .cta-button {
     display: inline-block;
-    background: #0077b6;
+    background: #4f46e5;
     color: #ebeff1;
     padding: 0.75rem 1.25rem;
     border-radius: 8px;
@@ -51,6 +51,7 @@
 }
 
 .cta-button:hover {
+    background-color: #5759db;
     transform: translateY(-3px);
     box-shadow: 0 10px 22px rgba(93, 202, 188, 0.2);
 }
@@ -65,7 +66,7 @@
 }
 
 .feature-card {
-    background: rgb(29, 28, 28);
+    background: #1e293b;
     border-radius: 10px;
     padding: 1.25rem;
     box-shadow: 0 6px 18px rgba(15,23,42,0.06);
